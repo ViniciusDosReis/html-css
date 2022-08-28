@@ -12,12 +12,32 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
         td, th {
             border: 1px solid black;
         }
+
+        col.nome {
+            background-color: yellow;
+        }
+
+        col.Sexo {
+            background-color: pink;
+        }
+
     </style>
     <h1>Exercício de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="nome">
+            <col class="Sexo" span="2">
+            <col class="Idade">
+            <col class="Profisão">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th>Nome</th>
