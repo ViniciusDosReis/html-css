@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td, th, caption {
+            border: 1px solid black;
+        }
+
+        table {
+            text-align: center;
+        }
+
+        caption {
+            background-color: red;
+            font-weight: bolder;
+        }
+
+        col.Apartamentos {
+            background-color: yellow;
+        }
+
+        col.Localização {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+    <table> 
+        <colgroup>
+            <col span="3" class="Apartamentos">
+            <col span="4" class="Localização" >
+        </colgroup>
+
+        <caption>Venha Morar em Nossos Belos Residenciais - Viver Serra</caption>
+        <tr>
+            <th scope="colgroup" colspan="3">Apartamentos</th>
+            <th scope="row">Localização</th>
+            <td>Laranjeiras - <br> 4 min.</td>
+            <td>Manguinhos - <br> 2min.</td>
+            <td>Vitoria- 8 min.</td>
+        </tr>
+        <tr>
+            <td>2 <br> Quartos</td>
+            <td>3 <br> Quartos</td>
+            <td>4 <br> Quartos</td>
+            <th scope="colgroup" colspan="4">Corretor On-Line</th>
+        </tr>
+        <tr>
+            <td>1 Suíte</td>
+            <td>2 Suíte</td>
+            <td>3 <br> Suítes</td>
+            <td>3333-2333</td>
+            <td>9999-9969</td>
+            <td>8888-8868</td>
+            <td>8111-1169</td>
+        </tr>
+        <tr>
+            <th scope="row">Lazer</th>
+            <td colspan="2">Piscina, Salão <br> de Festas, <br> Quadra <br> Poliesportivas</td>
+            <td colspan="3">Pronto Para Morar</td>
+            <th>LANÇAMENTO</th>
+        </tr>
+    </table>
+</body>
+</html>
