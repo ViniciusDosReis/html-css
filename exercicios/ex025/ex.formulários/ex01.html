@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea {
+            width: 488px;
+            height: 178px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deixe um comentário</h1>
+    <form action="../cadastro.php" method="post">
+        <div id="Nome">
+            <label for="inome">Nome: </label> <br>
+            <input type="text" name="nome" id="inome" size="65">
+        </div>
+        <div id="Email">
+            <label for="iemail">E-mail: </label> <br>
+            <input type="email" name="email" id="iemail" size="65">
+        </div>
+        <div id="Website">
+            <label for="iurl">Website: </label> <br>
+            <input type="url" name="url" id="iurl" size="65">
+        </div>
+        <div>
+            <label for="icom">Comentário: </label> <br>
+            <textarea name="com" id="icom" cols="30" rows="10"></textarea>
+        </div>
+        <p><strong>Observação</strong>: Seu comentário será publicado após passar pelo moderador</p>
+        <p>
+            <input type="submit" value="Enviar Comentário">
+        </p>
+    </form>
+</body>
+</html>

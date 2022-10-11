@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>SISTEMA DE GESTÃO ACADÊMICA</h2>
+    <form action="../cadastro.php" method="post">
+        <fieldset>
+            <legend>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</legend> <br>
+
+            <div>
+                <label for="ilogin">Login: </label>
+                <input type="email" name="login" id="ilogin">
+            </div> <br>
+
+            <div>
+                <label for="isenha">senha: </label>
+                <input type="password" name="senha" id="isenha">
+            </div> <br>
+
+            <div>
+                <label for="istatus">Status: </label>
+                <select name="status" id="istatus">
+                    <option value="NA">Nativo</option>
+                    <option value="IN">Inativo</option>
+                </select>
+            </div> <br>
+
+            <div>
+                Tipo: 
+                 <input type="radio" name="tipo" id="itec"> <label for="itec">Técnico</label>
+                 <input type="radio" name="tipo" id="iprof"><label for="iprof">Professor</label>
+                <input type="radio" name="tipo" id="ialu"> <label for="ialu">Aluno</label>
+            </div> <br>
+
+            <div>
+                <label for="idata">Data Criação: </label>
+                <input type="date" name="data" id="idata">
+            </div> <br>
+
+            <div>
+                Perfil: 
+                <input type="radio" name="conv" id="iconv"> <label for="iconv">Convidado</label>
+                <input type="radio" name="conv" id="Admin"> <label for="Admin">Administrador</label>
+            </div> <br>
+
+            <div>
+                <label for="iobs">Observações:
+                </label> <br>
+                <textarea name="obs" id="iobs" cols="30" rows="10"></textarea>
+            </div> <br>
+
+            <div>
+                Módulos: 
+                <input type="checkbox" name="comp" id="icomp"> <label for="icomp">Compras</label>
+                <input type="checkbox" name="bibl" id="ibibl"> <label for="ibibl">Biblioteca</label>
+                <input type="checkbox" name="acad" id="iacad"> <label for="iacad">Acadêmico</label> <br>
+                <input type="checkbox" name="docu" id="idocu"> <label for="idocu">Documentação</label> 
+                <input type="checkbox" name="RN" id="iRN"> <label for="iRN">Recursos Humanos</label>
+            </div> <br>
+
+            <div>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Excluir">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
