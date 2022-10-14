@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h1 {
+    background-color: rgb(124, 123, 123);
+    text-align: center;
+}
+
+header > menu {
+    background-color: rgb(85, 83, 83);
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+ul > li {
+    background-color: rgb(44, 43, 43);
+}
+
+article {
+    width: 600px;
+    margin: auto;
+}
